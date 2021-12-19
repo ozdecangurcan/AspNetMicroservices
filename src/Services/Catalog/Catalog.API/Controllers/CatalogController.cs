@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -12,7 +11,7 @@ namespace Catalog.API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CatalogController:ControllerBase
+    public class CatalogController : ControllerBase
     {
         private readonly IProductRepository _repository;
         private readonly ILogger<CatalogController> _logger;

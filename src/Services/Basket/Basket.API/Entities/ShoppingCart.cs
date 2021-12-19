@@ -11,15 +11,16 @@ namespace Basket.API.Entities
 
         public ShoppingCart(string userName)
         {
-            UserName = userName;        
+            UserName = userName;
         }
 
         public string UserName { get; set; }
-        
+
         public List<ShoppingCartItem> Items { get; set; } = new List<ShoppingCartItem>();
 
-        public decimal TotalPrice { 
-            get 
+        public decimal TotalPrice
+        {
+            get
             {
                 decimal totalPrice = 0;
 
@@ -29,7 +30,7 @@ namespace Basket.API.Entities
                 }
 
                 return totalPrice;
-            } 
+            }
         }
     }
 }
