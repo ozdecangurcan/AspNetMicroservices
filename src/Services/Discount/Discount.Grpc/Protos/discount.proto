@@ -16,7 +16,7 @@ message GetDiscountRequest{
 	string productName = 1;
 }
 
-message GetDiscountRequest{
+message CouponModel{
 	int32 id = 1;
 	string productName = 2;
 	string description = 3;
